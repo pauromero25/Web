@@ -1,0 +1,357 @@
+:root {
+    --fondo-web: #f6fff5;
+    --texto-cabecera: #efefef;
+    --fondo-nav: #000000;
+    --texto-principal: #171717;
+    --subtítulo: #000000;
+    --fondo-aside: #1c2a1a;
+    --borde-aside: #354936;
+    --texto-aside: #d6d6d6;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Define la fuente del texto */
+    margin: 0; 
+    padding: 0; 
+    background-color: var(--fondo-web);
+    text-align: center; 
+}
+
+nav {
+    margin: auto; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000000;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center; 
+}
+
+header {
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+nav ul li {
+    display: inline; 
+    margin-right: 5%; 
+    padding-left: 5%;
+}
+
+nav ul li a {
+    color: var(--texto-cabecera);
+    text-decoration: none; 
+}
+
+article {
+    margin-bottom: 20px; 
+    padding: 20px; 
+}
+
+article img {
+    max-width: 100%;
+    height: auto; 
+}
+
+footer ul li {
+    display: inline;
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* Fuentes y textos de la web */
+header h1 {
+    font-size: calc(3.5vw + 3.5vh); 
+    position: absolute; /* Fija la posición relativa al contenedor */
+    top: 25vh; /* Ajusta la distancia desde la parte superior en función del alto del viewport */
+    left: 50%; 
+    transform: translateX(-50%);
+    color: var(--texto-cabecera)
+}
+
+.contenedor{ /* Contenedor de la cabecera de la web */
+    background-image: url(CABECERA.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:50vw;
+}
+
+.contenedor-imagen-texto {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.texto-introducción { /* Párrafo inicial de la introducción */
+    color: var(--texto-principal);
+    flex: 1; 
+    margin: 0; 
+    padding: 0; 
+    font-size: calc(1vw + 1vh);
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.títuloh2{ /* Títulos de sección */
+    color: var(--subtítulo);
+    margin-top: 80px;
+    padding: 20px;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+} 
+
+.párrafo{  /* Texto de las preguntas -sobre nosotros- */
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left:5%;
+    margin-right: 12%;
+    padding: 10px;
+    color: var(--texto-principal);
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.subtítulo1{  /* Texto introducción de productos */
+    text-align: center;
+}
+
+.subtítulo2{ /* Títulos de las preguntas-sobre nosotros- */
+    text-align: right;
+    margin-right: 50px;
+}
+
+.subtítulo1, .subtítulo2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    padding: 100px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: var(--subtítulo);
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between; /* Espacio entre main y aside */
+    align-items: stretch;
+}
+
+main {
+    flex: 1; 
+    margin: 0; 
+}
+
+.contenedor-seccion { /* Sección sobre nosotros */
+    display: flex;
+    align-items: center; 
+    margin: 20px;
+}
+
+.imagen-izquierda-seccion {
+    display: flex;
+    max-width: 500px; 
+    margin-right: 5%; 
+}
+
+/* Contenedor principal del aside */
+.aside-derecho {
+    width: 10%; 
+    padding: 10px; 
+    background-color: var(--fondo-aside);
+    border-left: 1px solid var(--borde-aside);
+    height: auto; 
+}
+
+/* Texto rotativo del aside */
+.inclinado {
+    transform: rotate(0deg); 
+    display: inline-block; /* Asegura que el transform funcione correctamente */
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50%;
+    margin-bottom: 65%;
+    color: var(--texto-aside);
+    font-size: calc(1vw + 1vh); 
+}
+
+.inclinado:nth-child(1) { transform: rotate(0deg); }
+.inclinado:nth-child(2) { transform: rotate(-20deg); }
+.inclinado:nth-child(3) { transform: rotate(-40deg); }
+.inclinado:nth-child(4) { transform: rotate(-60deg); }
+.inclinado:nth-child(5) { transform: rotate(-80deg); }
+.inclinado:nth-child(6) { transform: rotate(-100deg); }
+.inclinado:nth-child(7) { transform: rotate(-120deg); }
+.inclinado:nth-child(8) { transform: rotate(-140deg); }
+.inclinado:nth-child(9) { transform: rotate(-160deg); }
+.inclinado:nth-child(10) { transform: rotate(-180deg); }
+.inclinado:nth-child(11) { transform: rotate(160deg); }
+.inclinado:nth-child(12) { transform: rotate(140deg); }
+.inclinado:nth-child(13) { transform: rotate(120deg); }
+.inclinado:nth-child(14) { transform: rotate(100deg); }
+.inclinado:nth-child(15) { transform: rotate(80deg); }
+.inclinado:nth-child(16) { transform: rotate(60deg); }
+.inclinado:nth-child(17) { transform: rotate(40deg); }
+.inclinado:nth-child(18) { transform: rotate(20deg); }
+
+
+/* Media Query para pantallas estrechas */
+@media (max-width: 1000px) {
+    .contenedor-seccion {
+        flex-direction: column; 
+        align-items: center;
+        margin: 0; 
+        padding: 0;
+    }
+
+    .imagen-izquierda-seccion {
+        flex-direction: column; 
+        align-items: center; 
+        margin-right: 0; 
+        margin-bottom: 10px;
+    }
+
+    .contenedor-imagen-texto {
+        flex-direction: column; 
+        align-items: center; 
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+
+    .texto-descripcion-seccion {
+        flex-direction: column; 
+        align-items: right; 
+        margin: 0; 
+        padding: 0; 
+    }
+}
+
+/* Ajustes y efectos imágenes de productos */
+.fila {
+    display: flex;
+}
+
+.fila img {
+    max-width: 33%; 
+    height: auto;
+}
+
+img:hover{
+transform: scale(1.06);
+}
+
+img {
+    transition: transform 0.3s ease; /* Transición suave al escalar */
+}
+
+/* Sección de las partículas (Elemento ART.NET) */
+.particle-container { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; /* Permite que el usuario interactúe con la página sin interferencias */
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(34, 139, 34, 0.8);
+    opacity: 0.6;
+    animation: float linear infinite; /* Animación en bucle */
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(10vw) translateY(100vh);
+        opacity: 0;
+    }
+}
+
+/* Estilos para las partículas */
+.particle:nth-child(1) {
+    width: 10px;
+    height: 10px;
+    left: 10%; 
+    animation-duration: 6s; /* Tiempo de animación para la primera partícula */
+}
+
+.particle:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 8s; /* Tiempo de animación para la segunda partícula */
+}
+
+.particle:nth-child(3) {
+    width: 15px;
+    height: 15px;
+    left: 30%;
+    animation-duration: 7s; /* Tiempo de animación para la tercera partícula */
+}
+
+.particle:nth-child(4) {
+    width: 12px;
+    height: 12px;
+    left: 40%;
+    animation-duration: 9s; /* Tiempo de animación para la cuarta partícula */
+}
+
+.particle:nth-child(5) {
+    width: 18px;
+    height: 18px;
+    left: 50%;
+    animation-duration: 6.5s; /* Tiempo de animación para la quinta partícula */
+}
+
+.particle:nth-child(6) {
+    width: 25px;
+    height: 25px;
+    left: 60%;
+    animation-duration: 7.5s; /* Tiempo de animación para la sexta partícula */
+}
+
+.particle:nth-child(7) {
+    width: 22px;
+    height: 22px;
+    left: 70%;
+    animation-duration: 8.5s; /* Tiempo de animación para la séptima partícula */
+}
+
+.particle:nth-child(8) {
+    width: 30px;
+    height: 30px;
+    left: 80%;
+    animation-duration: 6.8s; /* Tiempo de animación para la octava partícula */
+}
+
+.particle:nth-child(9) {
+    width: 14px;
+    height: 14px;
+    left: 90%;
+    animation-duration: 8.2s; /* Tiempo de animación para la novena partícula */
+}
+
+.particle:nth-child(10) {
+    width: 16px;
+    height: 16px;
+    left: 95%;
+    animation-duration: 7.2s; /* Tiempo de animación para la décima partícula */
+}
